@@ -1,0 +1,57 @@
+.card-body3{
+    background-image: url("humid.gif");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.card-body1{
+    background-image: url("temp.gif");
+    background-size: 110px;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+
+.card-body2{
+    background-image: url("wind.gif");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+body {
+    background-image: url("body.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-header4 {
+    background: rgb(9,9,121);
+    background: radial-gradient(circle, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.s1{
+    background: rgb(3,149,213);
+    background: radial-gradient(circle, rgba(3,149,213,1) 62%, rgba(0,212,255,1) 80%, rgba(9,9,121,1) 100%);
+}
+
+.card-header2 {
+    background: rgb(253,29,29);
+    background: radial-gradient(circle, rgba(253,29,29,1) 59%, rgba(252,161,69,1) 83%);
+}
+
+.s2{
+    background: rgb(252,161,69);
+background: radial-gradient(circle, rgba(252,161,69,1) 66%, rgba(253,29,29,1) 97%);
+}
+
+.card-header1 {
+    background: rgb(245,83,255);
+    background: radial-gradient(circle, rgba(245,83,255,1) 39%, rgba(0,223,255,0.6890405820531338) 100%);
+}
+
+.s3{
+    background: rgb(0,223,255);
+    background: radial-gradient(circle, rgba(0,223,255,0.6890405820531338) 34%, rgba(245,83,255,1) 100%);rgba(9,9,121,1) 100%);
+}

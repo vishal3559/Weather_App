@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WEATHER APP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">  
+</head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" >Weather App</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 10%;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Profile
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Registration</a></li>
+                  <li><a class="dropdown-item" href="#">Sign up</a></li>
+                  <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Log out</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" role="button">Usage Guide</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About this app</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search for a city" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <main><br><br>
+            <h2 class="title text-center mb-4">Weather for Mumbai</h2><br>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header4 py-3 text-bg-info border-info">
+                    <h4 class="my-0 fw-normal" style="color: aliceblue;">Humidity Info</h4>
+                  </div>
+                  <div class="card-body3">
+                    <h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light">%</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>Wind Degree is </li>
+                      <li>Feels Like</li>
+                      <li>Humidity is</li>
+                    </ul>
+                    <button type="button" class="s1 w-100 btn btn-lg btn-info">Refresh</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header2 py-3 text-bg-secondary border-secondary">
+                    <h4 class="my-0 fw-normal">Temperatures</h4>
+                  </div>
+                  <div class="card-body1">
+                    <h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light">C</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Temperature Degree is </li>
+                        <li>Min Temperature is</li>
+                        <li>Max Temperature is</li>
+                    </ul>
+                    <button type="button" class="s2 w-100 btn btn-lg btn-secondary">Refresh</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                  <div class="card-header1 py-3 text-bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">Wind Info</h4>
+                  </div>
+                  <div class="card-body2">
+                    <h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light">Km/hr</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Wind Speed is </li>
+                        <li>Sunrise Time is</li>
+                        <li>Sunset time is</li>
+                    </ul>
+                    <button type="button" class="s3 w-100 btn btn-lg btn-primary">Refresh</button>
+                  </div>
+                </div>
+              </div>
+            </div><br><br>
+        
+            <h2 class="display-6 text-center mb-4" style="color: aliceblue;">Weather of other common places</h2><br><br>
+            <div class="table-responsive">
+              <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th style="width: 14%;"></th>
+                    <th style="width: 14%;">Cloud pct</th>
+                    <th style="width: 14%;">Feels like</th>
+                    <th style="width: 14%;">Humidity</th>
+                    <th style="width: 14%;">Sunrise</th>
+                    <th style="width: 4%;">Sunset</th>
+                    <th style="width: 14%;">Temp</th>
+                    <th style="width: 4%;">Wind_degree</th>
+                    <th style="width: 14%;">Wind_Speed</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <th scope="row" class="text-start">Kolkata</th>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Mumbai</th>
+                    <td></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  </tr>
+                </tbody>
+        
+                <tbody>
+                  <tr>
+                    <th scope="row" class="text-start">Delhi</th>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">PUnjab</th>
+                    <td></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Chennai</th>
+                    <td></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Bihar</th>
+                    <td></td>
+                    <td></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </main>
+
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
